@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🎉 Happy Birthday 🎉</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+height:100vh;
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+background:linear-gradient(135deg,#1a0033,#3f0071,#000);
+color:white;
+}
+
+h1{
+font-size:60px;
+color:#FFD700;
+text-shadow:0 0 20px gold;
+animation:zoom 2s ease infinite alternate;
+}
+
+.subtitle{
+margin-top:15px;
+font-size:28px;
+color:#ffb3ff;
+}
+
+#openGift{
+margin-top:40px;
+padding:18px 40px;
+font-size:22px;
+border:none;
+border-radius:50px;
+background:gold;
+color:#222;
+cursor:pointer;
+box-shadow:0 0 25px gold;
+transition:.3s;
+}
+
+#openGift:hover{
+transform:scale(1.1);
+}
+
+#giftMessage{
+position:fixed;
+left:0;
+top:0;
+width:100%;
+height:100%;
+display:none;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+background:rgba(0,0,0,.92);
+padding:30px;
+text-align:center;
+animation:fade .8s;
+z-index:100;
+}
+
+#giftMessage h2{
+font-size:60px;
+color:#FFD700;
+margin-bottom:20px;
+text-shadow:0 0 20px gold;
+}
+
+#giftMessage p{
+font-size:26px;
+line-height:1.8;
+max-width:800px;
+}
+
+.close{
+margin-top:30px;
+padding:15px 35px;
+font-size:20px;
+border:none;
+border-radius:40px;
+background:#ff4d6d;
+color:white;
+cursor:pointer;
+}
+
+.balloon{
+position:absolute;
+bottom:-100px;
+font-size:50px;
+animation:fly linear infinite;
+}
+
+@keyframes fly{
+to{
+transform:translateY(-130vh);
+}
+}
+
+@keyframes fade{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+@keyframes zoom{
+from{
+transform:scale(.9);
+}
+to{
+transform:scale(1.08);
+}
+}
+</style>
+
+</head>
+<body>
+
+<h1>🎉 HAPPY BIRTHDAY 🎉</h1>
+
+<div class="subtitle">
+অগ্রিম শুভ জন্মদিন 💖
+</div>
+
+<button id="openGift">
+🎁 Open Birthday Gift
+</button>
+
+<div id="giftMessage">
+
+<h2>🎂 অগ্রিম শুভ জন্মদিন 🎂</h2>
+
+<p>
+আল্লাহ তোমার জীবনকে সুখ, শান্তি,
+ভালোবাসা, সফলতা ও সুস্বাস্থ্যে ভরে দিন।
+<br><br>
+তোমার প্রতিটি দিন আনন্দে কাটুক,
+সব স্বপ্ন পূরণ হোক।
+<br><br>
+💖 অনেক অনেক শুভেচ্ছা 💖
+</p>
+
+<button class="close"
+onclick="closeGift()">
+Close
+</button>
+
+</div>
+
+<script>
+
+document.getElementById("openGift").onclick=function(){
+
+document.getElementById("giftMessage").style.display="flex";
+
+}
+
+function closeGift(){
+
+document.getElementById("giftMessage").style.display="none";
+
+}
+
+const emojis=["🎈","🎉","✨","💖"];
+
+for(let i=0;i<35;i++){
+
+let b=document.createElement("div");
+
+b.className="balloon";
+
+b.innerHTML=emojis[Math.floor(Math.random()*emojis.length)];
+
+b.style.left=Math.random()*100+"vw";
+
+b.style.animationDuration=(5+Math.random()*6)+"s";
+
+b.style.animationDelay=(-Math.random()*6)+"s";
+
+document.body.appendChild(b);
+
+}
+
+</script>
+
+</body>
+</html>
