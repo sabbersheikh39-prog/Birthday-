@@ -1,1 +1,950 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MQ BD SHOPPING</title>
 
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f5f5f5;
+        }
+
+        header{
+            background:#0d6efd;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+
+        nav{
+            background:#222;
+            padding:15px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+        }
+
+        .hero{
+            text-align:center;
+            padding:80px 20px;
+            background:white;
+        }
+
+        .hero h1{
+            font-size:50px;
+            color:#0d6efd;
+        }
+
+        .hero p{
+            margin-top:15px;
+            font-size:20px;
+        }
+
+        .products{
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            flex-wrap:wrap;
+            padding:40px;
+        }
+
+        .card{
+            background:white;
+            width:250px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+            overflow:hidden;
+        }
+
+        .card img{
+            width:100%;
+            height:200px;
+            object-fit:cover;
+        }
+
+        .card h3{
+            padding:10px;
+        }
+
+        .card p{
+            padding:0 10px 15px;
+            color:green;
+            font-weight:bold;
+        }
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>MQ BD SHOPPING</h1>
+    <p>বাংলাদেশের অনলাইন মার্কেটপ্লেস</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Seller</a>
+    <a href="#">Cart</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+    <h1>Welcome to MQ BD SHOPPING</h1>
+    <p>Buy & Sell Everything Online</p>
+</section>
+
+<section class="products">
+
+    <div class="card">
+        <img src="https://via.placeholder.com/250x200" alt="">
+        <h3>Men's Shirt</h3>
+        <p>৳ 850</p>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/250x200" alt="">
+        <h3>Rice 25KG</h3>
+        <p>৳ 2200</p>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/250x200" alt="">
+        <h3>Smart Phone</h3>
+        <p>৳ 15000</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 MQ BD SHOPPING | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register - MQ BD SHOPPING</title>
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    background:#f5f5f5;
+}
+
+.container{
+    width:350px;
+    margin:50px auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#0d6efd;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#084298;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Create Account</h2>
+
+<form>
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="password" placeholder="Password" required>
+
+<button type="submit">
+Register
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - MQ BD SHOPPING</title>
+
+<style>
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f5f5f5;
+}
+
+.container{
+    width:350px;
+    margin:50px auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#198754;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Login</h2>
+
+<form>
+
+<input type="email" placeholder="Email">
+
+<input type="password" placeholder="Password">
+
+<button type="submit">
+Login
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Seller Dashboard</title>
+
+<style>
+body{
+font-family:Arial;
+background:#f5f5f5;
+}
+
+.container{
+width:90%;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+margin:15px 0;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>Seller Dashboard</h1>
+
+<div class="card">
+<h3>Total Products</h3>
+<p>25</p>
+</div>
+
+<div class="card">
+<h3>Total Orders</h3>
+<p>120</p>
+</div>
+
+<div class="card">
+<h3>Total Sales</h3>
+<p>৳ 85,000</p>
+</div>
+
+<a href="add-product.html">
+<button>Add Product</button>
+</a>
+
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Add Product</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f5f5f5;
+}
+
+.form{
+width:500px;
+margin:40px auto;
+background:white;
+padding:20px;
+border-radius:10px;
+}
+
+input,textarea{
+width:100%;
+padding:10px;
+margin:10px 0;
+}
+
+button{
+padding:10px 20px;
+background:green;
+color:white;
+border:none;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="form">
+
+<h2>Add Product</h2>
+
+<form>
+
+<input type="text" placeholder="Product Name">
+
+<input type="number" placeholder="Price">
+
+<input type="file">
+
+<textarea placeholder="Product Description"></textarea>
+
+<button>Add Product</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Products</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f5f5f5;
+}
+
+.products{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+padding:20px;
+}
+
+.card{
+width:250px;
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.card h3{
+padding:10px;
+}
+
+.card p{
+padding:0 10px 10px;
+color:green;
+}
+
+button{
+margin:10px;
+padding:8px 15px;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1 style="text-align:center;">
+All Products
+</h1>
+
+<div class="products">
+
+<div class="card">
+<img src="https://via.placeholder.com/250x200">
+
+<h3>T-Shirt</h3>
+
+<p>৳ 750</p>
+
+<button>View Details</button>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/250x200">
+
+<h3>Rice 25KG</h3>
+
+<p>৳ 2200</p>
+
+<button>View Details</button>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/250x200">
+
+<h3>Mobile Phone</h3>
+
+<p>৳ 15000</p>
+
+<button>View Details</button>
+</div>
+
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Product Details</title>
+</head>
+
+<body>
+
+<h1>Men's T-Shirt</h1>
+
+<img src="https://via.placeholder.com/400x300">
+
+<h2>Price: ৳ 750</h2>
+
+<p>
+High quality cotton t-shirt.
+</p>
+
+<button>Add To Cart</button>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shopping Cart</title>
+</head>
+
+<body>
+
+<h1>Your Cart</h1>
+
+<table border="1">
+
+<tr>
+<th>Product</th>
+<th>Price</th>
+</tr>
+
+<tr>
+<td>T-Shirt</td>
+<td>৳750</td>
+</tr>
+
+<tr>
+<td>Rice</td>
+<td>৳2200</td>
+</tr>
+
+</table>
+
+<h2>Total = ৳2950</h2>
+
+<a href="checkout.html">
+<button>Checkout</button>
+</a>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Checkout</title>
+</head>
+
+<body>
+
+<h1>Checkout</h1>
+
+<form>
+
+<input type="text" placeholder="Full Name"><br><br>
+
+<input type="text" placeholder="Address"><br><br>
+
+<input type="text" placeholder="Phone"><br><br>
+
+<select>
+<option>bKash</option>
+<option>Nagad</option>
+<option>Card</option>
+<option>Cash On Delivery</option>
+</select>
+
+<br><br>
+
+<button>
+Place Order
+</button>
+
+</form>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Checkout</title>
+</head>
+
+<body>
+
+<h1>Checkout</h1>
+
+<form>
+
+<input type="text" placeholder="Full Name"><br><br>
+
+<input type="text" placeholder="Address"><br><br>
+
+<input type="text" placeholder="Phone"><br><br>
+
+<select>
+<option>bKash</option>
+<option>Nagad</option>
+<option>Card</option>
+<option>Cash On Delivery</option>
+</select>
+
+<br><br>
+
+<button>
+Place Order
+</button>
+
+</form>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin Dashboard</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f5f5f5;
+margin:0;
+}
+
+.header{
+background:#0d6efd;
+color:white;
+padding:20px;
+}
+
+.container{
+padding:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+margin-bottom:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th,td{
+padding:10px;
+border:1px solid #ddd;
+}
+
+button{
+padding:8px 15px;
+cursor:pointer;
+}
+
+.approve{
+background:green;
+color:white;
+border:none;
+}
+
+.reject{
+background:red;
+color:white;
+border:none;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="header">
+<h1>MQ BD SHOPPING Admin Panel</h1>
+</div>
+
+<div class="container">
+
+<div class="card">
+<h2>Statistics</h2>
+
+<p>Total Users: 500</p>
+<p>Total Sellers: 80</p>
+<p>Total Orders: 1200</p>
+<p>Total Revenue: ৳ 15,00,000</p>
+</div>
+
+<div class="card">
+
+<h2>Seller Approval</h2>
+
+<table>
+
+<tr>
+<th>Name</th>
+<th>Shop Name</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>Rahim</td>
+<td>Rahim Fashion</td>
+
+<td>
+<button class="approve">Approve</button>
+<button class="reject">Reject</button>
+</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h2>Recent Orders</h2>
+
+<table>
+
+<tr>
+<th>Order ID</th>
+<th>Customer</th>
+<th>Total</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>#1001</td>
+<td>Karim</td>
+<td>৳2500</td>
+<td>Pending</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+</body>
+</html>
+let cart = [];
+
+function addToCart(name, price){
+
+cart.push({
+name:name,
+price:price
+});
+
+updateCart();
+}
+
+function updateCart(){
+
+let cartList =
+document.getElementById("cart-list");
+
+let total =
+document.getElementById("total");
+
+cartList.innerHTML = "";
+
+let sum = 0;
+
+cart.forEach(item=>{
+
+let li =
+document.createElement("li");
+
+li.innerText =
+item.name + " - ৳" + item.price;
+
+cartList.appendChild(li);
+
+sum += item.price;
+
+});
+
+total.innerText =
+"Total: ৳" + sum;
+}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cart Demo</title>
+</head>
+
+<body>
+
+<h1>MQ BD SHOPPING</h1>
+
+<button onclick="addToCart('T-Shirt',750)">
+Add T-Shirt
+</button>
+
+<button onclick="addToCart('Rice',2200)">
+Add Rice
+</button>
+
+<button onclick="addToCart('Mobile',15000)">
+Add Mobile
+</button>
+
+<h2>Cart Items</h2>
+
+<ul id="cart-list"></ul>
+
+<h3 id="total">
+Total: ৳0
+</h3>
+
+<script src="cart.js"></script>
+
+</body>
+</html>
+CREATE TABLE users (
+ id INT AUTO_INCREMENT PRIMARY KEY,
+ name VARCHAR(100),
+ email VARCHAR(100) UNIQUE,
+ password VARCHAR(255),
+ role ENUM('admin','seller','customer'),
+ created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE products (
+ id INT AUTO_INCREMENT PRIMARY KEY,
+ seller_id INT,
+ name VARCHAR(255),
+ description TEXT,
+ price DECIMAL(10,2),
+ image VARCHAR(255),
+ stock INT,
+ created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
+ FOREIGN KEY (seller_id)
+ REFERENCES users(id)
+);
+CREATE TABLE orders (
+ id INT AUTO_INCREMENT PRIMARY KEY,
+ customer_id INT,
+ total DECIMAL(10,2),
+
+ status ENUM(
+ 'pending',
+ 'paid',
+ 'shipped',
+ 'delivered'
+ ),
+
+ created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
+ FOREIGN KEY(customer_id)
+ REFERENCES users(id)
+);
+CREATE TABLE order_items (
+ id INT AUTO_INCREMENT PRIMARY KEY,
+
+ order_id INT,
+ product_id INT,
+
+ quantity INT,
+
+ price DECIMAL(10,2),
+
+ FOREIGN KEY(order_id)
+ REFERENCES orders(id),
+
+ FOREIGN KEY(product_id)
+ REFERENCES products(id)
+);
+<?php
+
+$conn = new mysqli(
+"localhost",
+"root",
+"",
+"mqbdshopping"
+);
+
+$email =
+$_POST['email'];
+
+$password =
+$_POST['password'];
+
+$sql =
+"SELECT * FROM users
+WHERE email='$email'";
+
+$result =
+$conn->query($sql);
+
+$user =
+$result->fetch_assoc();
+
+if(password_verify(
+$password,
+$user['password']
+)){
+    echo "Login Success";
+}else{
+    echo "Wrong Password";
+}
+?>
+<?php
+
+$conn = new mysqli(
+"localhost",
+"root",
+"",
+"mqbdshopping"
+);
+
+$name = $_POST['name'];
+$email = $_POST['email'];
+
+$password =
+password_hash(
+$_POST['password'],
+PASSWORD_DEFAULT
+);
+
+$sql =
+"INSERT INTO users
+(name,email,password,role)
+
+VALUES
+
+('$name','$email',
+'$password',
+'customer')";
+
+$conn->query($sql);
+
+echo "Registration Success";
+?>
